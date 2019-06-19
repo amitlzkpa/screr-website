@@ -12,11 +12,26 @@
 <body>
 
   <div class="container">
-    <h1>Screr</h1>
-    <hr/>
+    <div id="content"></div>
   </div>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/marked.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) { 
+
+      fetch('https://raw.githubusercontent.com/amitlzkpa/screr/master/README.md')
+        .then(function(response) {
+          return response.text();
+        })
+        .then(function(text) {
+          let mkdText = marked(text);
+          document.getElementById('content').innerHTML = mkdText;
+        });
+
+
+    });
+  </script>
 </body>
 </html>
