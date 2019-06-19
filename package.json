@@ -1,5 +1,5 @@
 {
-  "name": "amitapp",
+  "name": "screr-website",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,11 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
-    "handlebars": "^4.0.11",
-    "nodemon": "^1.18.7",
-    "vanilla-router": "^1.2.7"
+    "nodemon": "^1.18.7"
   }
 }
